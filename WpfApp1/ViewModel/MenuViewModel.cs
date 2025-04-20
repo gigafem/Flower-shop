@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Text;
+using WpfApp1.Core;
+using WpfApp1;
+using System.Windows;
+
+namespace WpfApp1.ViewModel { 
+ class MenuViewModel
+{
+    public RelayCommand OpenMenuCommand { get; set; }
+    public RelayCommand OpenAboutUsCommand { get; set; }
+    public RelayCommand OpenReserveCommand { get; set; }
+    public RelayCommand OpenGuestCommand { get; set; }
+    public RelayCommand GoBackCommand { get; set; }
+    public RelayCommand GoBackMMCommand { get; set; }
+
+
+        public MenuViewModel()
+        {
+            OpenMenuCommand = new RelayCommand(o =>
+            {
+                Window1 window1 = new Window1();
+                window1.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window1;
+            });
+            OpenGuestCommand = new RelayCommand(o =>
+            {
+                MainWindow window1 = new MainWindow();
+                window1.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window1;
+            });
+            OpenAboutUsCommand = new RelayCommand(o =>
+            {
+                AboutUs window = new AboutUs();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+
+            OpenReserveCommand = new RelayCommand(o =>
+            {
+                Reserve window = new Reserve();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+
+            GoBackCommand = new RelayCommand(o =>
+            {
+                MainWindow window = new MainWindow();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoBackMMCommand = new RelayCommand(o =>
+            {
+                Window2 window = new Window2();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+        }
+}
+}

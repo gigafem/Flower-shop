@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.Reserve"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
+        mc:Ignorable="d"
+        Title="Reserve"  Height="1080" Width="1920">
+    
+        <Window.DataContext>
+            <viewmodel:MenuViewModel/>
+        </Window.DataContext>   
+
+    <Grid>
+        <Image Source="Images/italy3 (2).png" Stretch="Fill" Margin="1,0,0,-4" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Reservation" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="160" FontFamily="Italia Std Book" Foreground="red" Margin="30,17,0,0" Height="211" Width="865"/>
+        <Button Content="←" 
+        HorizontalAlignment="Left" 
+        Height="154" 
+        VerticalAlignment="Top" 
+        Width="206" FontSize="100" 
+        Cursor="Hand" 
+        FontFamily="Italia Std Book" 
+        Foreground="green" Margin="84,860,0,0" Command="{Binding GoBackCommand}" >
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="Transparent"
+        CornerRadius="30"
+        BorderBrush="Red"
+        BorderThickness="0" Margin="0,0,14,50">
+                        <ContentPresenter HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

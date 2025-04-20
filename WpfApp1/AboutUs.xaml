@@ -1,0 +1,75 @@
+﻿<Window x:Class="WpfApp1.AboutUs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
+        mc:Ignorable="d"
+        Title="About Us"  Height="1080" Width="1920">
+    
+    <Window.DataContext>
+        <viewmodel:MenuViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Image Source="Images/italy3 (2).png" Stretch="Fill" Margin="0,-2,0,-2" Grid.ColumnSpan="2"/>
+        <Label Content ="Come to us to get a taste of life &#xD;&#xA;&#x9;in every dish!" 
+               FontFamily="SimpleRonde" Margin="337,362,859,470" FontSize="40" Foreground="red" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.652"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="About us" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="160" FontFamily="Italia Std Book" Foreground="ForestGreen" Margin="1181,27,0,0"/>
+        <Label Content="A restaurant where every taste is reminiscent of &#xD;&#xA;sunny Italy, its warm mood and passion for real food&#xA;&#xD;&#xA;We created this place inspired by the rhythms of Italy &#xD;&#xA;— unhurried, delicious and full of emotions&#xD;&#xA;&#xA;We use only fresh, high-quality products&#xD;&#xA;so that every meal becomes a real gastronomic pleasure&#xD;&#xA;&#xA;Italian Rhapsody is not just a restaurant&#xD;&#xA; &#xD;&#xA;— this is a love story about Italy,  told through food, &#xD;&#xA;atmosphere and music &#xA;" 
+               HorizontalAlignment="Left" Height="460" Margin="1114,235,0,0" VerticalAlignment="Top" Width="743" FontFamily="Italia Std Book" FontSize="28"/>
+        <Ellipse Margin="1457,591,79,-240" Stroke="#FF8EB05A" RenderTransformOrigin="0.5,0.5" StrokeThickness="250">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="89.764"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Label Content="&#x9;&#x9;We are here! &#xA;230124 Venezia, Italy &#xA;48 Rue de Rivoli 75001 Paris, France&#xA;Alexanderplatz 7 10178 Berlin, Germany"  
+               FontSize="25" FontFamily="simpleronde" HorizontalAlignment="Left" Margin="1330,792,0,0" VerticalAlignment="Top" Height="304" Width="606" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.459"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="3.975"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="←" 
+        HorizontalAlignment="Left" 
+        Height="154" 
+        VerticalAlignment="Top" 
+        Width="206" FontSize="100" 
+        Cursor="Hand" 
+        FontFamily="Italia Std Book" 
+        Foreground="green" Margin="0,900,0,0" Command="{Binding GoBackCommand}">
+           
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="Transparent"
+        CornerRadius="30"
+        BorderBrush="Red"
+        BorderThickness="0" Margin="0,0,14,50">
+                        <ContentPresenter HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

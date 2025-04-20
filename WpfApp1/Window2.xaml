@@ -1,0 +1,95 @@
+﻿<Window x:Class="WpfApp1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Home page" Height="563" Width="788"
+        xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel">
+
+    <Window.DataContext>
+        <viewmodel:MenuViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Image Source="Images/italyhome.png" Stretch="Fill" HorizontalAlignment="Center" Width="802"/>
+        <Label Content ="Log in as..." FontFamily="SimpleRonde" Margin="285,127,0,0" FontSize="30" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.01"/>
+                    <RotateTransform Angle="0.416"/>
+                    <TranslateTransform Y="0.051"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Welcome!" Foreground="Red" FontSize="120"
+               HorizontalAlignment="Left" 
+               Margin="122,-1,0,0" 
+               VerticalAlignment="Top" 
+               RenderTransformOrigin="0.5,0.5" 
+               Height="143" Width="521" FontFamily="Italia Std Book">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.295"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="staff" 
+            HorizontalAlignment="Left" 
+            Height="181" 
+            VerticalAlignment="Top" 
+            Width="136" FontSize="52" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Foreground="Red" Margin="225,214,0,0" >
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="Red"
+                            
+
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Name ="GuestButton" Content="guest" 
+            HorizontalAlignment="Left" 
+            Height="181" 
+            VerticalAlignment="Top" 
+            Width="137" 
+            FontSize="52"
+            FontFamily="Italia Std Book" 
+            BorderBrush="White" 
+            Background="White" 
+            Foreground="ForestGreen" 
+            Margin="394,214,0,0"
+            Cursor="Hand" 
+            Command="{Binding OpenGuestCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFE2EFCE"
+                        CornerRadius="30"
+                        BorderBrush="ForestGreen"
+
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+
+    </Grid>
+</Window>
