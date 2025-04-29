@@ -6,40 +6,115 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Menu"  Height="1080" Width="1920">
+        Title="Catalog"  Height="720" Width="1280">
 
-        <Window.DataContext>
-            <viewmodel:MenuViewModel/>
-        </Window.DataContext>
+
+    <Window.DataContext>
+        <viewmodel:MenuViewModel/>
+    </Window.DataContext>
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="31*"/>
-        </Grid.ColumnDefinitions>
-        <Image Source="Images/italy2.png" Stretch="Fill" Margin="0,-2,0,-2" Grid.ColumnSpan="2"></Image>
+        <Image Source="Images/catalog1.png" Stretch ="Fill" Margin="-20,0,-18,0"/>
         <Button Content="←" 
-    HorizontalAlignment="Left" 
-    Height="154" 
-    VerticalAlignment="Top" 
-    Width="206" FontSize="100" 
-    Cursor="Hand" 
-    FontFamily="Italia Std Book" 
-    Foreground="green" Margin="10,900,0,0" Grid.ColumnSpan="2" Command="{Binding GoBackCommand}" >
-
+ HorizontalAlignment="Left" 
+ Height="280" 
+ VerticalAlignment="Top" 
+ Width="316" FontSize="100" 
+ Cursor="Hand" 
+ FontFamily="Italia Std Book" 
+ Foreground="green" Margin="10,537,0,0" Command="{Binding GoBackCommand}" RenderTransformOrigin="0.46,0.34">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="Transparent"
+                    <Border Background="FloralWhite"
+                 CornerRadius="30"
+                 BorderBrush="ForestGreen"
+                 BorderThickness="2" Margin="0,0,213,142" >
+                        <ContentPresenter HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="bouquets" 
+             HorizontalAlignment="Center" 
+             Height="112" 
+             VerticalAlignment="Top" 
+             Width="322" FontSize="52" 
+             Cursor="Hand" 
+             FontFamily="Italia Std Book" 
+             Margin="0,186,0,0" 
+             Foreground="LightCoral">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                     CornerRadius="30"
+                         BorderBrush="LightCoral"
+                     
+
+                     BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                         VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="compositions" 
+HorizontalAlignment="Center" 
+Height="112" 
+VerticalAlignment="Top" 
+Width="322" FontSize="52" 
+Cursor="Hand" 
+FontFamily="Italia Std Book" 
+Foreground="LightCoral" Margin="0,352,0,0">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
         CornerRadius="30"
-        BorderBrush="Red"
-        BorderThickness="0" Margin="0,0,14,50">
+            BorderBrush="LightCoral"
+        
+
+        BorderThickness="3">
                         <ContentPresenter HorizontalAlignment="Center"
             VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="160" FontFamily="Italia Std Book" Foreground="white" Width="410" Margin="1397,28,0,0" Grid.Column="1"/>
+        <Button Content="presents" 
+      HorizontalAlignment="Center" 
+      Height="112" 
+      VerticalAlignment="Top" 
+      Width="322" FontSize="52" 
+      Cursor="Hand" 
+      FontFamily="Italia Std Book" 
+      Margin="0,510,0,0" 
+      Foreground="LightCoral">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+              CornerRadius="30"
+                  BorderBrush="LightCoral"
+              
+
+              BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                  VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Catalog" Foreground="LightCoral" 
+               FontSize="100" HorizontalAlignment="Center" 
+               Height="144" VerticalAlignment="Top" Width="364" 
+               FontFamily="Italia Std Book"/>
 
     </Grid>
 </Window>

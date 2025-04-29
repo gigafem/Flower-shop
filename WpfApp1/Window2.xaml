@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Home page" Height="563" Width="788"
+        Title="Home page" Height="886" Width="887"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel">
 
     <Window.DataContext>
@@ -13,8 +13,8 @@
     </Window.DataContext>
 
     <Grid>
-        <Image Source="Images/italyhome.png" Stretch="Fill" HorizontalAlignment="Center" Width="802"/>
-        <Label Content ="Log in as..." FontFamily="SimpleRonde" Margin="285,127,0,0" FontSize="30" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Image Source="Images/mainMenu.png" Stretch ="Fill" Margin="-20,0,-18,0"/>
+        <Label Content ="Log in as..." FontFamily="SimpleRonde" Margin="0,323,0,0" FontSize="30" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Center">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -24,12 +24,12 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Welcome!" Foreground="Red" FontSize="120"
+        <Label Content="Welcome!" Foreground="forestGreen" FontSize="105"
                HorizontalAlignment="Left" 
-               Margin="122,-1,0,0" 
+               Margin="202,196,0,0" 
                VerticalAlignment="Top" 
                RenderTransformOrigin="0.5,0.5" 
-               Height="143" Width="521" FontFamily="Italia Std Book">
+               Height="143" Width="522" FontFamily="Italia Std Book">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -40,19 +40,20 @@
             </Label.RenderTransform>
         </Label>
         <Button Content="staff" 
-            HorizontalAlignment="Left" 
-            Height="181" 
+            HorizontalAlignment="Center" 
+            Height="104" 
             VerticalAlignment="Top" 
-            Width="136" FontSize="52" 
+            Width="244" FontSize="52" 
             Cursor="Hand" 
             FontFamily="Italia Std Book" 
-            Foreground="Red" Margin="225,214,0,0" >
+            Foreground="LightCoral" Margin="0,534,0,0" 
+            Command="{Binding OpenStaffCommand}">
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="#FFFFB1B4" Opacity="1"
                         CornerRadius="30"
-                        BorderBrush="Red"
+                        BorderBrush="LightCoral"
                             
 
                         BorderThickness="3">
@@ -63,16 +64,16 @@
             </Button.Template>
         </Button>
         <Button Name ="GuestButton" Content="guest" 
-            HorizontalAlignment="Left" 
-            Height="181" 
+            HorizontalAlignment="Center" 
+            Height="104" 
             VerticalAlignment="Top" 
-            Width="137" 
+            Width="244" 
             FontSize="52"
             FontFamily="Italia Std Book" 
             BorderBrush="White" 
             Background="White" 
             Foreground="ForestGreen" 
-            Margin="394,214,0,0"
+            Margin="0,410,0,0"
             Cursor="Hand" 
             Command="{Binding OpenGuestCommand}">
             <Button.Template>

@@ -9,29 +9,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\aboutUs.png" />
     <None Remove="Images\arrow.png" />
-    <None Remove="Images\italy1.png" />
-    <None Remove="Images\italy2.png" />
-    <None Remove="Images\italy3 %282%29.png" />
-    <None Remove="Images\italyhome.png" />
+    <None Remove="Images\authorization.png" />
+    <None Remove="Images\catalog1.png" />
+    <None Remove="Images\contacts.png" />
+    <None Remove="Images\mainGuest.png" />
+    <None Remove="Images\mainMenu.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\aboutUs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\arrow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\italy1.png">
+    <Resource Include="Images\authorization.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\italy2.png">
+    <Resource Include="Images\catalog1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\italy3 (2).png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Images\italyhome.png">
+    <Resource Include="Images\contacts.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\mainGuest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\mainMenu.png" />
   </ItemGroup>
 
   <ItemGroup>

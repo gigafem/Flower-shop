@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\WpfApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\reserve.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\reserve.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\reserve.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\reserve.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\window3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\aboutus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\aboutus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\window4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -13,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\viewmodel\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\viewmodel\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\aboutus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\aboutus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\wpfapp1\\reserve.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\reserve.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,28 +46,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MenuViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\ViewModel\\MenuViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\ViewModel\\MenuViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\ViewModel\\MenuViewModel.cs",
+              "RelativeToolTip": "WpfApp1\\ViewModel\\MenuViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T13:20:18.745Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reserve.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Reserve.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Reserve.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Reserve.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\Reserve.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T16:53:02.656Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "RelativeToolTip": "WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wEYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T13:20:18.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Window2.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window2.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\Window2.xaml",
@@ -67,7 +93,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Window3.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window3.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Window3.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window3.xaml",
+              "RelativeToolTip": "WpfApp1\\Window3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T15:25:24.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
@@ -75,30 +113,6 @@
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-26T17:10:49.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window1.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Window1.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window1.xaml",
-              "RelativeToolTip": "WpfApp1\\Window1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-14T09:59:46.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Reserve.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Reserve.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Reserve.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Reserve.xaml",
-              "RelativeToolTip": "WpfApp1\\Reserve.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-14T10:02:08.08Z",
               "EditorCaption": ""
             },
             {
@@ -111,6 +125,42 @@
               "RelativeToolTip": "WpfApp1\\AboutUs.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-14T10:00:34.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window1.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Window1.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window1.xaml",
+              "RelativeToolTip": "WpfApp1\\Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-14T09:59:46.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Reserve.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Reserve.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Reserve.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Reserve.xaml",
+              "RelativeToolTip": "WpfApp1\\Reserve.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-14T10:02:08.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Window4.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window4.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Window4.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\WpfApp1\\Window4.xaml",
+              "RelativeToolTip": "WpfApp1\\Window4.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T15:53:18.421Z",
               "EditorCaption": ""
             }
           ]

@@ -18,8 +18,10 @@ namespace WpfApp1.ViewModel {
     public RelayCommand OpenAboutUsCommand { get; set; }
     public RelayCommand OpenReserveCommand { get; set; }
     public RelayCommand OpenGuestCommand { get; set; }
+    public RelayCommand OpenStaffCommand { get; set; }
     public RelayCommand GoBackCommand { get; set; }
     public RelayCommand GoBackMMCommand { get; set; }
+    public RelayCommand LogInCommand { get; set; }
 
 
         public MenuViewModel()
@@ -38,6 +40,13 @@ namespace WpfApp1.ViewModel {
                 Application.Current.MainWindow.Close();
                 Application.Current.MainWindow = window1;
             });
+            OpenStaffCommand = new RelayCommand(o =>
+            {
+                Window3 window = new Window3();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
             OpenAboutUsCommand = new RelayCommand(o =>
             {
                 AboutUs window = new AboutUs();
@@ -49,6 +58,14 @@ namespace WpfApp1.ViewModel {
             OpenReserveCommand = new RelayCommand(o =>
             {
                 Reserve window = new Reserve();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+
+            LogInCommand = new RelayCommand(o =>
+            {
+                Window4 window = new Window4();
                 window.Show();
                 Application.Current.MainWindow.Close();
                 Application.Current.MainWindow = window;

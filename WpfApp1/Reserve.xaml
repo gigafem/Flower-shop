@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Reserve"  Height="1080" Width="1920">
-    
-        <Window.DataContext>
-            <viewmodel:MenuViewModel/>
-        </Window.DataContext>   
+        Title="Contacts" Height="720" Width="1280">
+
+    <Window.DataContext>
+        <viewmodel:MenuViewModel/>
+    </Window.DataContext>
 
     <Grid>
-        <Image Source="Images/italy3 (2).png" Stretch="Fill" Margin="1,0,0,-4" RenderTransformOrigin="0.5,0.5">
+        <Image Source="Images/contacts.png" Stretch="Fill" Margin="1,0,0,-4" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -23,24 +23,70 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label Content="Reservation" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="160" FontFamily="Italia Std Book" Foreground="red" Margin="30,17,0,0" Height="211" Width="865"/>
+        <Label Content="Contacts" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               FontSize="100" 
+               FontFamily="Italia Std Book" 
+               Foreground="Green" 
+               Height="130" 
+               Width="391" Margin="0,98,0,0"/>
         <Button Content="←" 
-        HorizontalAlignment="Left" 
-        Height="154" 
-        VerticalAlignment="Top" 
-        Width="206" FontSize="100" 
-        Cursor="Hand" 
-        FontFamily="Italia Std Book" 
-        Foreground="green" Margin="84,860,0,0" Command="{Binding GoBackCommand}" >
-
+HorizontalAlignment="Left" 
+Height="280" 
+VerticalAlignment="Top" 
+Width="316" FontSize="100" 
+Cursor="Hand" 
+FontFamily="Italia Std Book" 
+Foreground="green" Margin="10,537,0,0" Command="{Binding GoBackCommand}" RenderTransformOrigin="0.46,0.34">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="Transparent"
-        CornerRadius="30"
-        BorderBrush="Red"
-        BorderThickness="0" Margin="0,0,14,50">
+                    <Border Background="FloralWhite"
+                CornerRadius="30"
+                BorderBrush="ForestGreen"
+                BorderThickness="2" Margin="0,0,213,142" >
                         <ContentPresenter HorizontalAlignment="Center"
-            VerticalAlignment="Center"/>
+               VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Address: &#xD;&#xA;Moscow, Tverskaya St., 18, building 1 &#xD;&#xA;Pushkinskaya / Tverskaya metro station&#xD;&#xA;&#xD;&#xA;Phone:&#xA;+7 (495) 123-45-67&#xA;&#xA;📧 Email:&#xA;info@flowers-tverskaya.ru&#xA;&#xA;Opening hours:&#xA;Mon–Sun: 9:00 – 21:00&#xA;&#xA;📱 Instagram:&#xA;@kostopraww" HorizontalAlignment="Left" Height="337" 
+               Margin="10,228,0,0" VerticalAlignment="Top" Width="1270" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                FontSize="19" FontFamily="Berlin Sans FB" Foreground="DarkGreen" />
+        <Button Content="← go" 
+            Click="Button_Click" 
+            HorizontalAlignment="Left" 
+            Height="168" 
+            VerticalAlignment="Top" 
+            Width="305" FontSize="30" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Foreground="green" Margin="626,509,0,0" RenderTransformOrigin="0.46,0.34">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="FloralWhite"
+                CornerRadius="10"
+                BorderBrush="ForestGreen"
+                BorderThickness="2" Margin="0,0,218,125" RenderTransformOrigin="0.521,-0.06" >
+                        <ContentPresenter HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
