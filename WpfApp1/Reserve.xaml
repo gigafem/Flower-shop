@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Contacts" Height="720" Width="1280">
+        Title="Contacts" Height="360" Width="640">
 
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
@@ -26,19 +26,19 @@
         <Label Content="Contacts" 
                HorizontalAlignment="Center" 
                VerticalAlignment="Top" 
-               FontSize="100" 
+               FontSize="55" 
                FontFamily="Italia Std Book" 
                Foreground="Green" 
-               Height="130" 
-               Width="391" Margin="0,98,0,0"/>
+               Height="116" 
+               Width="391" Margin="0,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button Content="←" 
 HorizontalAlignment="Left" 
-Height="280" 
+Height="192" 
 VerticalAlignment="Top" 
-Width="316" FontSize="100" 
+Width="268" FontSize="35" 
 Cursor="Hand" 
 FontFamily="Italia Std Book" 
-Foreground="green" Margin="10,537,0,0" Command="{Binding GoBackCommand}" RenderTransformOrigin="0.46,0.34">
+Foreground="green" Margin="10,256,0,0" Command="{Binding GoBackCommand}" RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,27 +50,28 @@ Foreground="green" Margin="10,537,0,0" Command="{Binding GoBackCommand}" RenderT
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="FloralWhite"
-                CornerRadius="30"
-                BorderBrush="ForestGreen"
-                BorderThickness="2" Margin="0,0,213,142" >
+CornerRadius="30"
+BorderBrush="ForestGreen"
+BorderThickness="2" Margin="0,0,213,142" >
                         <ContentPresenter HorizontalAlignment="Center"
-               VerticalAlignment="Center"/>
+    VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Address: &#xD;&#xA;Moscow, Tverskaya St., 18, building 1 &#xD;&#xA;Pushkinskaya / Tverskaya metro station&#xD;&#xA;&#xD;&#xA;Phone:&#xA;+7 (495) 123-45-67&#xA;&#xA;📧 Email:&#xA;info@flowers-tverskaya.ru&#xA;&#xA;Opening hours:&#xA;Mon–Sun: 9:00 – 21:00&#xA;&#xA;📱 Instagram:&#xA;@kostopraww" HorizontalAlignment="Left" Height="337" 
-               Margin="10,228,0,0" VerticalAlignment="Top" Width="1270" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                FontSize="19" FontFamily="Berlin Sans FB" Foreground="DarkGreen" />
+
+        <Label Content="Address: &#xD;&#xA;Moscow, Tverskaya St., 18, building 1 &#xD;&#xA;Pushkinskaya / Tverskaya metro station&#xD;&#xA;&#xD;&#xA;Phone:&#xA;+7 (495) 123-45-67&#xA;&#xA;📧 Email:&#xA;info@flowers-tverskaya.ru&#xA;&#xA;Opening hours:&#xA;Mon–Sun: 9:00 – 21:00&#xA;&#xA;📱 Instagram:&#xA;@kostopraww" HorizontalAlignment="Left" Height="229" 
+               Margin="219,79,0,0" VerticalAlignment="Top" Width="245" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                FontSize="10" FontFamily="Berlin Sans FB" Foreground="DarkGreen" />
         <Button Content="← go" 
             Click="Button_Click" 
             HorizontalAlignment="Left" 
-            Height="168" 
+            Height="148" 
             VerticalAlignment="Top" 
-            Width="305" FontSize="30" 
+            Width="261" FontSize="9" 
             Cursor="Hand" 
             FontFamily="Italia Std Book" 
-            Foreground="green" Margin="626,509,0,0" RenderTransformOrigin="0.46,0.34">
+            Foreground="green" Margin="321,252,0,0" RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

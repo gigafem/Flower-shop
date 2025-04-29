@@ -6,22 +6,22 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Guest home page" Height="939" Width="1291">
+        Title="Guest home page" Height="450" Width="600">
 
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
 
     <Grid>
-        <Image Source="Images\mainGuest.png" Stretch="None"></Image>
+        <Image Source="Images\mainGuest.png" Stretch="fill" Margin="-10,0,-7,0"></Image>
         <Button Content="←" 
-HorizontalAlignment="Left" 
-Height="280" 
-VerticalAlignment="Top" 
-Width="316" FontSize="100" 
-Cursor="Hand" 
-FontFamily="Italia Std Book" 
-Foreground="green" Margin="162,561,0,0" Command="{Binding GoBackMMCommand}" RenderTransformOrigin="0.46,0.34">
+ HorizontalAlignment="Left" 
+ Height="191" 
+ VerticalAlignment="Top" 
+ Width="268" FontSize="35" 
+ Cursor="Hand" 
+ FontFamily="Italia Std Book" 
+ Foreground="green" Margin="10,344,0,0" Command="{Binding GoBackMMCommand}" Click="Button_Click_1" RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -33,24 +33,24 @@ Foreground="green" Margin="162,561,0,0" Command="{Binding GoBackMMCommand}" Rend
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="FloralWhite"
-                CornerRadius="30"
-                BorderBrush="ForestGreen"
-                BorderThickness="2" Margin="0,0,213,142" >
+ CornerRadius="30"
+ BorderBrush="ForestGreen"
+ BorderThickness="2" Margin="0,0,213,142" >
                         <ContentPresenter HorizontalAlignment="Center"
-               VerticalAlignment="Center"/>
+     VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
         </Button>
         <Label Content="Floral rhapsody " 
                HorizontalAlignment="Left" 
-               Margin="330,162,0,0" 
+               Margin="7,16,0,0" 
                VerticalAlignment="Top" 
-               Height="232" Width="712" 
-               FontSize="100" 
+               Height="232" Width="599" 
+               FontSize="55" 
                Foreground="LightCoral" 
                FontFamily="Italia Std Book" 
-               RenderTransformOrigin="0.5,0.5" >
+               RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -62,16 +62,16 @@ Foreground="green" Margin="162,561,0,0" Command="{Binding GoBackMMCommand}" Rend
         </Label>
         <Button Content="about us" 
                     HorizontalAlignment="Left" 
-                    Height="294" 
+                    Height="104" 
                     VerticalAlignment="Top" 
-                    Width="214" 
-                    FontSize="52" 
+                    Width="110" 
+                    FontSize="26" 
                     Click="Button_Click_2" 
                     FontFamily="Italia Std Book" 
                     BorderBrush="White" 
                     Background="White" 
                     Foreground="ForestGreen" 
-                    Margin="781,407,0,0"
+                    Margin="368,235,0,0"
                     Command="{Binding OpenAboutUsCommand}"
                     Cursor="Hand">
             <Button.Template>
@@ -90,14 +90,14 @@ Foreground="green" Margin="162,561,0,0" Command="{Binding GoBackMMCommand}" Rend
         <Button 
                 Content="catalog" 
                 HorizontalAlignment="Center" 
-                Height="294" 
+                Height="104" 
                 VerticalAlignment="Top" 
-                Width="214" 
-                FontSize="52" 
+                Width="110" 
+                FontSize="26" 
                 Click="Button_Click_2" 
                 FontFamily="Italia Std Book"
                 Foreground="DarkOrange" 
-                Margin="0,407,0,0" 
+                Margin="0,235,0,0" 
                 Cursor="Hand"
                 Command="{Binding OpenMenuCommand}">
             <Button.Template>
@@ -115,13 +115,13 @@ Foreground="green" Margin="162,561,0,0" Command="{Binding GoBackMMCommand}" Rend
         </Button>
         <Button Content="contacts" 
                     HorizontalAlignment="Left" 
-                    Height="294" 
+                    Height="104" 
                     VerticalAlignment="Top" 
-                    Width="214" FontSize="52" 
+                    Width="110" FontSize="26" 
                     Cursor="Hand" 
                     Click="Button_Click_2" 
                     FontFamily="Italia Std Book" 
-                    Margin="299,407,0,0" 
+                    Margin="107,235,0,0" 
                     Foreground="LightCoral" 
                     Command="{Binding OpenReserveCommand}">
             <Button.Template>
@@ -140,12 +140,12 @@ Foreground="green" Margin="162,561,0,0" Command="{Binding GoBackMMCommand}" Rend
         </Button>
         <Label Content="flower shop" 
                HorizontalAlignment="Left" 
-               Margin="847,268,0,0" 
+               Margin="389,153,0,0" 
                VerticalAlignment="Top" 
-               FontSize="45" 
+               FontSize="22" 
                FontFamily="SimpleRonde" 
                Foreground="DarkGreen" 
-               Height="114" Width="287" 
+               Height="114" Width="152" 
                RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>

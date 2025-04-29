@@ -16,6 +16,7 @@
     <None Remove="Images\contacts.png" />
     <None Remove="Images\mainGuest.png" />
     <None Remove="Images\mainMenu.png" />
+    <None Remove="Images\MMenu.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +43,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\mainMenu.png" />
+    <Resource Include="Images\MMenu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
