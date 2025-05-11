@@ -46,6 +46,7 @@ BorderThickness="2" Margin="0,0,213,142" >
         </Button>
 
         <Button Content="bouquets" 
+    
              HorizontalAlignment="Center" 
              Height="71" 
              VerticalAlignment="Top" 
@@ -53,7 +54,8 @@ BorderThickness="2" Margin="0,0,213,142" >
              Cursor="Hand" 
              FontFamily="Italia Std Book" 
              Margin="0,85,0,0" 
-             Foreground="LightCoral">
+             Foreground="LightCoral"
+             Command="{Binding GoBouquetsCommand}">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="#FFFFB1B4" Opacity="1"
@@ -69,13 +71,15 @@ BorderThickness="2" Margin="0,0,213,142" >
             </Button.Template>
         </Button>
         <Button Content="compositions" 
-HorizontalAlignment="Center" 
-Height="71" 
-VerticalAlignment="Top" 
-Width="156" FontSize="25" 
-Cursor="Hand" 
-FontFamily="Italia Std Book" 
-Foreground="LightCoral" Margin="0,161,0,0">
+                HorizontalAlignment="Center" 
+                Height="71" 
+                VerticalAlignment="Top" 
+                Width="156" FontSize="25" 
+                Cursor="Hand" 
+                FontFamily="Italia Std Book" 
+                Foreground="LightCoral" 
+                Margin="0,161,0,0" 
+                Command="{Binding GoCompositionsCommand}">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="#FFFFB1B4" Opacity="1"
@@ -91,14 +95,15 @@ Foreground="LightCoral" Margin="0,161,0,0">
             </Button.Template>
         </Button>
         <Button Content="presents" 
-      HorizontalAlignment="Center" 
-      Height="71" 
-      VerticalAlignment="Top" 
-      Width="156" FontSize="25" 
-      Cursor="Hand" 
-      FontFamily="Italia Std Book" 
-      Margin="0,237,0,0" 
-      Foreground="LightCoral">
+                HorizontalAlignment="Center" 
+                Height="71" 
+                VerticalAlignment="Top" 
+                Width="156" FontSize="25" 
+                Cursor="Hand" 
+                FontFamily="Italia Std Book" 
+                Margin="0,237,0,0" 
+                Foreground="LightCoral"
+                Command="{Binding GoPresentsCommand}">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="#FFFFB1B4" Opacity="1"

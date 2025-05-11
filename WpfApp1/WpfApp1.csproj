@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <None Remove="Images\aboutUs.png" />
-    <None Remove="Images\arrow.png" />
     <None Remove="Images\authorization.png" />
     <None Remove="Images\catalog1.png" />
     <None Remove="Images\contacts.png" />
@@ -25,9 +24,6 @@
 
   <ItemGroup>
     <Resource Include="Images\aboutUs.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Images\arrow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\authorization.png">

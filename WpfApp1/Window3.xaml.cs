@@ -24,9 +24,32 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string Username = UsernameBox.Text.Trim();
+                string PasswordHash = PasswordBox.Password.Trim();
 
+
+                if (DatabaseHelper.ValidateEmployeeLogin(Username, PasswordHash))
+                {
+                    MessageBox.Show("Вход выполнен успешно!");
+                    Window4 mainWindow = new Window4();
+                    mainWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    ResultText.Text = "Неверный логин или пароль!";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка: " + ex.Message);
+            }
         }
+
+
     }
 }

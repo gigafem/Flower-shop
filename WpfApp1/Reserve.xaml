@@ -24,13 +24,13 @@
             </Image.RenderTransform>
         </Image>
         <Label Content="Contacts" 
-               HorizontalAlignment="Center" 
+               HorizontalAlignment="Left" 
                VerticalAlignment="Top" 
                FontSize="55" 
                FontFamily="Italia Std Book" 
                Foreground="Green" 
                Height="116" 
-               Width="391" Margin="0,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+               Width="354" Margin="146,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button Content="←" 
 HorizontalAlignment="Left" 
 Height="192" 

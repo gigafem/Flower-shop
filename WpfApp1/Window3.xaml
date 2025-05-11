@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
+        mc:Ignorable="d"
         Title="Staff authorization page" Height="443" Width="443">
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
@@ -84,8 +84,8 @@ Foreground="green" Margin="32,666,0,0" Command="{Binding GoBackMMCommand}" Rende
             Width="112" FontSize="30" 
             Cursor="Hand" 
             FontFamily="Italia Std Book" 
-            Foreground="LightCoral" Margin="0,329,0,0" Click="Button_Click" 
-            Command="{Binding LogInCommand}">
+            Foreground="LightCoral" Margin="0,329,0,0" 
+            Click="Login_Click" >
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -102,12 +102,26 @@ Foreground="green" Margin="32,666,0,0" Command="{Binding GoBackMMCommand}" Rende
             </Button.Template>
         </Button>
 
-        <TextBox HorizontalAlignment="Center" 
-                 TextWrapping="Wrap" Text="" 
-                 VerticalAlignment="Top" Width="184" Height="28" Margin="0,164,0,0"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,246,0,0" 
-          TextWrapping="Wrap" Text="" 
-          VerticalAlignment="Top" Width="184" Height="28"/>
+        <TextBox x:Name="UsernameBox"
+         HorizontalAlignment="Center" 
+         TextWrapping="Wrap"
+         VerticalAlignment="Top" 
+         Width="184" Height="28" 
+         Margin="0,164,0,0" />
+
+        <PasswordBox x:Name="PasswordBox"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Top" 
+             Width="184" Height="28" 
+             Margin="0,246,0,0"/>
+        
+        <TextBlock x:Name="ResultText"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Top"
+           Margin="0,275,0,0"
+           Foreground="DarkRed"
+           FontSize="14"
+           TextAlignment="Center"/>
 
 
     </Grid>

@@ -22,6 +22,9 @@ namespace WpfApp1.ViewModel {
     public RelayCommand GoBackCommand { get; set; }
     public RelayCommand GoBackMMCommand { get; set; }
     public RelayCommand LogInCommand { get; set; }
+    public RelayCommand GoBouquetsCommand { get; set; }
+    public RelayCommand GoCompositionsCommand { get; set; }
+    public RelayCommand GoPresentsCommand { get; set; }
 
 
         public MenuViewModel()
@@ -81,6 +84,27 @@ namespace WpfApp1.ViewModel {
             GoBackMMCommand = new RelayCommand(o =>
             {
                 Window2 window = new Window2();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoBouquetsCommand = new RelayCommand(o =>
+            {
+                Window5 window = new Window5();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoCompositionsCommand = new RelayCommand(o =>
+            {
+                Window6 window = new Window6();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoPresentsCommand = new RelayCommand(o =>
+            {
+                Window7 window = new Window7();
                 window.Show();
                 Application.Current.MainWindow.Close();
                 Application.Current.MainWindow = window;

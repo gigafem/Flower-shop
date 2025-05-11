@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
-        Title="Staff Main Menu" Height="1080" Width="1920">
+        Title="Staff Main Menu" Height="443" Width="443">
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
