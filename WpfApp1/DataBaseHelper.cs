@@ -12,20 +12,29 @@ namespace WpfApp1
     public static class DatabaseHelper
     {
         public static string connectionString = @"Server=.\SQLEXPRESS;Database=flowerShop;Trusted_Connection=True;";
-
-        public static DataTable GetBouquets()
+        public static DataTable GetPresents()
         {
-            return GetTable("SELECT * FROM Bouquets");
+            return GetTable("SELECT * FROM Gifts");
         }
-
         public static DataTable GetCompositions()
         {
             return GetTable("SELECT * FROM Compositions");
         }
-
-        public static DataTable GetGifts()
+        public static DataTable GetBouquets()
         {
-            return GetTable("SELECT * FROM Gifts");
+            return GetTable("SELECT * FROM Bouquets");
+        }
+        public static DataTable GetOrders()
+        {
+            return GetTable("SELECT * FROM Orders");
+        }
+        public static DataTable GetLogIns()
+        {
+            return GetTable("SELECT * FROM EmployeeLogIn");
+        }
+        public static DataTable GetEmployees()
+        {
+            return GetTable("SELECT * FROM Employees");
         }
 
         private static DataTable GetTable(string query)
@@ -40,9 +49,10 @@ namespace WpfApp1
             }
             return dt;
         }
-        public static bool ValidateEmployeeLogin(string username, string password)
+        public static bool ValidateEmployeeLogin(string username, string password, out string role)
         {
-            string query = "SELECT COUNT(*) FROM EmployeeLogIn WHERE username = @username AND password = @PasswordHash";
+            role = null;
+            string query = "SELECT role FROM EmployeeLogIn WHERE username = @username AND password = @PasswordHash";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -52,11 +62,21 @@ namespace WpfApp1
                     cmd.Parameters.AddWithValue("@PasswordHash", password);
 
                     conn.Open();
-                    int count = (int)cmd.ExecuteScalar();
-                    return count > 0;
+                    var result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        role = result.ToString();
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
         }
 
+
     }
+
 }

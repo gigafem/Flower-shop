@@ -19,12 +19,20 @@ namespace WpfApp1.ViewModel {
     public RelayCommand OpenReserveCommand { get; set; }
     public RelayCommand OpenGuestCommand { get; set; }
     public RelayCommand OpenStaffCommand { get; set; }
+    public RelayCommand OpenUserLogInCommand { get; set; }
     public RelayCommand GoBackCommand { get; set; }
     public RelayCommand GoBackMMCommand { get; set; }
+    public RelayCommand GoBackCatalogCommand { get; set; }
     public RelayCommand LogInCommand { get; set; }
     public RelayCommand GoBouquetsCommand { get; set; }
     public RelayCommand GoCompositionsCommand { get; set; }
     public RelayCommand GoPresentsCommand { get; set; }
+    public RelayCommand GoEmployeesCommand { get; set; }
+    public RelayCommand GoLogInsCommand { get; set; }
+    public RelayCommand GoOrdersCommand { get; set; }
+    public RelayCommand GoBouquetsDGCommand { get; set; }
+    public RelayCommand GoCompositionsDGCommand { get; set; }
+    public RelayCommand GoPresentsDGCommand { get; set; }
 
 
         public MenuViewModel()
@@ -49,6 +57,13 @@ namespace WpfApp1.ViewModel {
                 window.Show();
                 Application.Current.MainWindow.Close();
                 Application.Current.MainWindow = window;
+            });
+            OpenUserLogInCommand = new RelayCommand(o =>
+            {
+                UserAuthorization window1 = new UserAuthorization();
+                window1.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window1;
             });
             OpenAboutUsCommand = new RelayCommand(o =>
             {
@@ -88,6 +103,13 @@ namespace WpfApp1.ViewModel {
                 Application.Current.MainWindow.Close();
                 Application.Current.MainWindow = window;
             });
+            GoBackCatalogCommand = new RelayCommand(o =>
+            {
+                Window1 window = new Window1();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
             GoBouquetsCommand = new RelayCommand(o =>
             {
                 Window5 window = new Window5();
@@ -105,6 +127,48 @@ namespace WpfApp1.ViewModel {
             GoPresentsCommand = new RelayCommand(o =>
             {
                 Window7 window = new Window7();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoEmployeesCommand = new RelayCommand(o =>
+            {
+                EmployeesDG window = new EmployeesDG();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoLogInsCommand = new RelayCommand(o =>
+            {
+                LogInsDG window = new LogInsDG();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoOrdersCommand = new RelayCommand(o =>
+            {
+                OrdersDG window = new OrdersDG();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoBouquetsDGCommand = new RelayCommand(o =>
+            {
+                BouquetsDG window = new BouquetsDG();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoCompositionsDGCommand = new RelayCommand(o =>
+            {
+                CompositionsDG window = new CompositionsDG();
+                window.Show();
+                Application.Current.MainWindow.Close();
+                Application.Current.MainWindow = window;
+            });
+            GoPresentsDGCommand = new RelayCommand(o =>
+            {
+                PresentsDG window = new PresentsDG();
                 window.Show();
                 Application.Current.MainWindow.Close();
                 Application.Current.MainWindow = window;

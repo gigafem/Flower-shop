@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Avatars\avatar1.png" />
+    <None Remove="Avatars\avatar2.png" />
+    <None Remove="Avatars\avatar3.png" />
+    <None Remove="Avatars\avatar4.png" />
     <None Remove="Images\aboutUs.png" />
     <None Remove="Images\authorization.png" />
     <None Remove="Images\catalog1.png" />
@@ -16,13 +20,28 @@
     <None Remove="Images\mainGuest.png" />
     <None Remove="Images\mainMenu.png" />
     <None Remove="Images\MMenu.png" />
+    <None Remove="Images\user.png" />
+    <None Remove="Loading\LoadingGif.gif" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Avatars\avatar1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Avatars\avatar2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Avatars\avatar3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Avatars\avatar4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\aboutUs.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -40,6 +59,12 @@
     </Resource>
     <Resource Include="Images\mainMenu.png" />
     <Resource Include="Images\MMenu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\user.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Loading\LoadingGif.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

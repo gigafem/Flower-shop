@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,23 +31,33 @@ namespace WpfApp1
             {
                 string Username = UsernameBox.Text.Trim();
                 string PasswordHash = PasswordBox.Password.Trim();
+                string role;
 
-
-                if (DatabaseHelper.ValidateEmployeeLogin(Username, PasswordHash))
+                if (DatabaseHelper.ValidateEmployeeLogin(Username, PasswordHash, out role))
                 {
-                    MessageBox.Show("Вход выполнен успешно!");
-                    Window4 mainWindow = new Window4();
-                    mainWindow.Show();
+                    MessageBox.Show("the login was completed successfully!");
+
+                    if (role == "admin")
+                    {
+                        Window4 adminWindow = new Window4();
+                        adminWindow.Show();
+                    }
+                    else
+                    {
+                        UserWindow userWindow = new UserWindow();
+                        userWindow.Show();
+                    }
+
                     this.Close();
                 }
                 else
                 {
-                    ResultText.Text = "Неверный логин или пароль!";
+                    ResultText.Text = "Invalid username or password";
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 

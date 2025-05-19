@@ -6,12 +6,14 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
-        Title="Presents" Height="360" Width="640">
+        Title="Presents" Height="360" Width="640"
+        WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
     <Grid>
+        <Border Background="White" CornerRadius="10" Padding="20"/>
         <Button Content="←" 
         HorizontalAlignment="Left" 
         Height="192" 
@@ -21,7 +23,7 @@
         FontFamily="Italia Std Book" 
         Foreground="green" 
         Margin="10,256,0,0" 
-        Command="{Binding GoBackCommand}" 
+        Command="{Binding GoBackCatalogCommand}" 
         RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>

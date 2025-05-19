@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="About Us"  Height="443" Width="443">
+        Title="About Us"  Height="443" Width="443"
+        WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
@@ -46,21 +47,21 @@ BorderThickness="2" Margin="0,0,213,142" >
         </Button>
         <Label Content="About us" 
                HorizontalAlignment="Center" 
-               FontSize="50" Height="145"
+               FontSize="50" Height="86"
                VerticalAlignment="Top" 
                Width="423"
                FontFamily="Italia Std Book" 
-               Margin="0,69,0,0"
+               Margin="0,56,0,0"
                Foreground="LightCoral" HorizontalContentAlignment="Center"/>
         <Label Content="Floral Rhapsody is more than just a flower shop.&#xA;We create a mood, convey feelings and &#xD;&#xA;turn each bouquet into a little story.&#xA;Each of our bouquets has its own rhapsody: be it&#xD;&#xA;a gentle symphony of love, &#xD;&#xA;a bright melody of celebration or &#xD;&#xA;a quiet sonata of appreciation.&#xA;&#xA;We carefully select only fresh flowers from &#xD;&#xA;the best suppliers so that your emotions &#xD;&#xA;can be conveyed in their most beautiful embodiment. &#xD;&#xA;Our florists are real artists, for whom every order is &#xD;&#xA;a personal work of art.&#xA;&#xA;Floral Rhapsody is more than a flower shop. &#xD;&#xA;It is a space of inspiration where flowers sound in &#xD;&#xA;unison with your feelings." 
                    HorizontalAlignment="Center" 
-                   Height="282" 
-                   Margin="0,90,0,0" 
+                   Height="276" 
+                   Margin="0,99,0,0" 
                    VerticalAlignment="Top" 
-                   Width="263" 
+                   Width="259" 
                    HorizontalContentAlignment="Center" 
                    VerticalContentAlignment="Center"
-                   FontSize="10" FontFamily="Berlin Sans FB"
+                   FontSize="12" FontFamily="Berlin Sans FB"
                    Foreground="DarkGreen"/>
 
     </Grid>

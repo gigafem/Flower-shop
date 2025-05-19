@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Catalog"  Height="360" Width="640">
+        Title="Catalog"  Height="360" Width="640"
+        WindowStartupLocation="CenterScreen">
 
 
     <Window.DataContext>

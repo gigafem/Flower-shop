@@ -6,10 +6,264 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
-        Title="Staff Main Menu" Height="443" Width="443">
+        Title="Admin Main Menu" Height="480" Width="443"
+        WindowStartupLocation="CenterScreen">
+
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
-    <Grid>
+    <Grid Background="#fff5e0">
+        <Image x:Name="AvatarImage" 
+               Margin="28,7,285,354"/>
+
+        <Button Content="←"
+                HorizontalAlignment="Left" 
+                Height="191" 
+                VerticalAlignment="Top" 
+                Width="268" FontSize="35" 
+                Cursor="Hand" 
+                FontFamily="Italia Std Book" 
+                Foreground="LightCoral" Margin="10,374,0,0" 
+                Command="{Binding GoBackMMCommand}" 
+                RenderTransformOrigin="0.46,0.34">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="FloralWhite"
+                    CornerRadius="30"
+                    BorderBrush="LightCoral"
+                    BorderThickness="2" Margin="0,0,213,142" >
+                        <ContentPresenter HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Welcome to &#xD;&#xA;control panel!" 
+               Foreground="LightCoral"
+               FontSize="35"
+               HorizontalAlignment="Left" 
+               Height="93" 
+               Margin="119,0,0,0" 
+               VerticalAlignment="Top" 
+               Width="314" FontFamily="Italia Std Book" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"/>
+        <Button Content="Employees" 
+              HorizontalAlignment="Left" 
+              Height="71" 
+              VerticalAlignment="Top" 
+              Width="156" FontSize="25" 
+              Cursor="Hand" 
+              FontFamily="Italia Std Book" 
+              Margin="49,111,0,0" 
+              Foreground="LightCoral"
+              Command="{Binding GoEmployeesCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B7" Opacity="1"
+              CornerRadius="30"
+                  BorderBrush="LightCoral"
+              BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                  VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="LogIns" 
+            HorizontalAlignment="Left" 
+            Height="71" 
+            VerticalAlignment="Top" 
+            Width="156" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="49,194,0,0" 
+            Foreground="LightCoral"
+            Command="{Binding GoLogInsCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="LightCoral"
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Bouquets" 
+            HorizontalAlignment="Left" 
+            Height="70" 
+            VerticalAlignment="Top" 
+             Width="156" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="250,112,0,0" 
+            Foreground="LightCoral"
+            Command="{Binding GoBouquetsDGCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="LightCoral"
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Compositions" 
+            HorizontalAlignment="Left" 
+            Height="71" 
+            VerticalAlignment="Top" 
+             Width="156" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="250,194,0,0" 
+            Foreground="LightCoral"
+            Command="{Binding GoCompositionsDGCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="LightCoral"
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Presents" 
+            HorizontalAlignment="Left" 
+            Height="71" 
+            VerticalAlignment="Top" 
+             Width="156" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="250,283,0,0" 
+            Foreground="LightCoral"
+            Command="{Binding GoPresentsDGCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="LightCoral"
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Orders" 
+            HorizontalAlignment="Left" 
+            Height="71" 
+            VerticalAlignment="Top" 
+            Width="156" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="49,283,0,0" 
+            Foreground="LightCoral"
+            Command="{Binding GoOrdersCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFFFB1B4" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="LightCoral"
+                        BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Grid>
+            <!-- Кнопка -->
+            <Button Content="Table Management" 
+            Click="ManageTablesButton_Click"
+            HorizontalAlignment="Center" 
+            Height="52" 
+            VerticalAlignment="Top" 
+            Width="235" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="0,374,0,0" 
+            Foreground="ForestGreen">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="#FFE2EFCE" 
+                        CornerRadius="30"
+                        BorderBrush="ForestGreen"
+                        BorderThickness="3">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Панель управления таблицами -->
+            <Border x:Name="ManagementPanel" 
+            Background="#FFF5FFF0" 
+            BorderBrush="ForestGreen" 
+            BorderThickness="2" 
+            CornerRadius="20"
+            Padding="20"
+            Margin="50"
+            Visibility="Collapsed"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+                <Grid Width="250">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Выбор таблицы -->
+                    <ComboBox x:Name="TableComboBox" 
+                      Grid.Row="0" 
+                      Margin="0,0,0,10" 
+                      FontSize="16"
+                      Text="Select table"/>
+
+                    <!-- Выбор действия -->
+                    <ComboBox x:Name="ActionComboBox" 
+                      Grid.Row="1" 
+                      Margin="0,0,0,10"
+                      FontSize="16"
+                      Text="Select action"/>
+
+                    <!-- Поля формы (будут добавляться динамически) -->
+                    <StackPanel x:Name="FormFieldsPanel" Grid.Row="2" Margin="0,0,0,10"/>
+
+                    <!-- Кнопка Выполнить -->
+                    <Button Content="Do action" 
+                    Grid.Row="3" 
+                    Height="40"
+                    FontSize="18"
+                    Background="#FFE2EFCE"
+                    BorderBrush="ForestGreen"
+                    Foreground="ForestGreen"
+                    BorderThickness="2"
+                    Click="ExecuteActionButton_Click"
+                    Cursor="Hand"
+                    FontFamily="Italia Std Book"/>
+                </Grid>
+            </Border>
+        </Grid>
+
     </Grid>
 </Window>

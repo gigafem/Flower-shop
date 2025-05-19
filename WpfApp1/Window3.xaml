@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Staff authorization page" Height="443" Width="443">
+        Title="Staff authorization page"  Height="480" Width="462"
+         WindowStartupLocation="CenterScreen">
+
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
@@ -15,13 +17,13 @@
         <Image Source="Images/authorization.png" Stretch="none" />
         <Rectangle Fill="FloralWhite" HorizontalAlignment="Center" Height="261" Stroke="Transparent" VerticalAlignment="Top" Width="327" Margin="0,45,0,0"/>
         <Button Content="←" 
-HorizontalAlignment="Left" 
-Height="280" 
-VerticalAlignment="Top" 
-Width="316" FontSize="100" 
-Cursor="Hand" 
-FontFamily="Italia Std Book" 
-Foreground="green" Margin="32,666,0,0" Command="{Binding GoBackMMCommand}" RenderTransformOrigin="0.46,0.34">
+        HorizontalAlignment="Left" 
+        Height="192" 
+        VerticalAlignment="Top" 
+        Width="268" FontSize="35"
+        Cursor="Hand" 
+        FontFamily="Italia Std Book" 
+        Foreground="green" Margin="10,348,0,0" Command="{Binding GoBackMMCommand}" RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -114,7 +116,7 @@ Foreground="green" Margin="32,666,0,0" Command="{Binding GoBackMMCommand}" Rende
              VerticalAlignment="Top" 
              Width="184" Height="28" 
              Margin="0,246,0,0"/>
-        
+
         <TextBlock x:Name="ResultText"
            HorizontalAlignment="Center"
            VerticalAlignment="Top"

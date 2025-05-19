@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="Bouquets" Height="360" Width="640">
+        Title="Bouquets" Height="360" Width="640"
+        WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
-    
+
     <Grid>
-        <Image Source="Images/catalog1.png" Stretch ="Fill"/>
         <Button Content="←" 
                 HorizontalAlignment="Left" 
                 Height="192" 
@@ -23,7 +23,7 @@
                 FontFamily="Italia Std Book" 
                 Foreground="green" 
                 Margin="10,256,0,0" 
-                Command="{Binding GoBackCommand}" 
+                Command="{Binding GoBackCatalogCommand}" 
                 RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -45,6 +45,6 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-
+       
     </Grid>
 </Window>

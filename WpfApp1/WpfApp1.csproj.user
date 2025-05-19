@@ -7,6 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="BouquetsDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CompositionsDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeesDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LogInsDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrdersDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PresentsDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserAuthorization.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModel\SplashWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +57,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="BouquetsDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CompositionsDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeesDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LogInsDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PresentsDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Reserve.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -37,6 +79,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AboutUs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewModel\SplashWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window1.xaml">
