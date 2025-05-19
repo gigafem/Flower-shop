@@ -1,32 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Аня\\Documents\\MDK\\Flower-shop\\Flower-shop\\WpfApp1\\WpfApp1.csproj": {}
+    "C:\\Users\\Home\\Desktop\\мусоряка програмістська\\C#\\FlowerShop\\Flower-shop\\WpfApp1\\WpfApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Аня\\Documents\\MDK\\Flower-shop\\Flower-shop\\WpfApp1\\WpfApp1.csproj": {
+    "C:\\Users\\Home\\Desktop\\мусоряка програмістська\\C#\\FlowerShop\\Flower-shop\\WpfApp1\\WpfApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Аня\\Documents\\MDK\\Flower-shop\\Flower-shop\\WpfApp1\\WpfApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Home\\Desktop\\мусоряка програмістська\\C#\\FlowerShop\\Flower-shop\\WpfApp1\\WpfApp1.csproj",
         "projectName": "WpfApp1",
-        "projectPath": "C:\\Users\\Аня\\Documents\\MDK\\Flower-shop\\Flower-shop\\WpfApp1\\WpfApp1.csproj",
-        "packagesPath": "C:\\Users\\Аня\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Аня\\Documents\\MDK\\Flower-shop\\Flower-shop\\WpfApp1\\obj\\",
+        "projectPath": "C:\\Users\\Home\\Desktop\\мусоряка програмістська\\C#\\FlowerShop\\Flower-shop\\WpfApp1\\WpfApp1.csproj",
+        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Home\\Desktop\\мусоряка програмістська\\C#\\FlowerShop\\Flower-shop\\WpfApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Аня\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows"
+          "net7.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
             "projectReferences": {}
           }
         },
@@ -34,17 +39,16 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.9.0, )"
@@ -73,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

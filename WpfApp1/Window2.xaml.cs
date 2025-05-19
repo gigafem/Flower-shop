@@ -22,6 +22,7 @@ namespace WpfApp1
         public Window2()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

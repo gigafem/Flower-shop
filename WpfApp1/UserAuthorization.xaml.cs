@@ -64,16 +64,17 @@ namespace WpfApp1
                 MessageBox.Show("the login was completed successfully!");
 
                 MainWindow mainWindow = new MainWindow();
+                Application.Current.MainWindow = mainWindow;
                 mainWindow.Show();
 
                 // Закрытие текущего окна
                 this.Close();
-            }
+        }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
+}
     }
 }
 

@@ -21,6 +21,7 @@ namespace WpfApp1
                 {
                     var mainWindow = new Window2();
                     mainWindow.Show();
+                    Application.Current.MainWindow = mainWindow;
                     splash.Close();
                 });
             });
