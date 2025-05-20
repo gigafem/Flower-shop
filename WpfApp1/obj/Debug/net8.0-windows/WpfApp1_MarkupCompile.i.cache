@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Аня\Documents\MDK\Flower-shop\Flower-shop\WpfApp1\obj\Debug\net8.0-windows\
+C:\Users\Аня\Documents\MDK\Flower-shop\Flower-shop\Flower-shop\WpfApp1\obj\Debug\net8.0-windows\
 WpfApp1
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Аня\Documents\MDK\Flower-shop\Flower-shop\WpfApp1\App.xaml
+C:\Users\Аня\Documents\MDK\Flower-shop\Flower-shop\Flower-shop\WpfApp1\App.xaml
 191657764998
 
 27-1816616602
-2001875480172
+217-1359013630
 AboutUs.xaml;BouquetsDG.xaml;CompositionsDG.xaml;EmployeesDG.xaml;LogInsDG.xaml;MainWindow.xaml;OrdersDG.xaml;PresentsDG.xaml;Reserve.xaml;UserAuthorization.xaml;UserWindow.xaml;ViewModel\SplashWindow.xaml;Window1.xaml;Window2.xaml;Window3.xaml;Window4.xaml;Window5.xaml;Window6.xaml;Window7.xaml;
 
-True
+False
 

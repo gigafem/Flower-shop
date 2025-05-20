@@ -135,43 +135,31 @@ namespace WpfApp1.ViewModel {
             {
                 EmployeesDG window = new EmployeesDG();
                 window.Show();
-                Application.Current.MainWindow.Close();
-                Application.Current.MainWindow = window;
             });
             GoLogInsCommand = new RelayCommand(o =>
             {
                 LogInsDG window = new LogInsDG();
                 window.Show();
-                Application.Current.MainWindow.Close();
-                Application.Current.MainWindow = window;
             });
             GoOrdersCommand = new RelayCommand(o =>
             {
                 OrdersDG window = new OrdersDG();
                 window.Show();
-                Application.Current.MainWindow.Close();
-                Application.Current.MainWindow = window;
             });
             GoBouquetsDGCommand = new RelayCommand(o =>
             {
                 BouquetsDG window = new BouquetsDG();
                 window.Show();
-                Application.Current.MainWindow.Close();
-                Application.Current.MainWindow = window;
             });
             GoCompositionsDGCommand = new RelayCommand(o =>
             {
                 CompositionsDG window = new CompositionsDG();
                 window.Show();
-                Application.Current.MainWindow.Close();
-                Application.Current.MainWindow = window;
             });
             GoPresentsDGCommand = new RelayCommand(o =>
             {
                 PresentsDG window = new PresentsDG();
                 window.Show();
-                Application.Current.MainWindow.Close();
-                Application.Current.MainWindow = window;
             });
         }
 }

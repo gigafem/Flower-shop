@@ -29,7 +29,7 @@
                VerticalAlignment="Top" 
                FontSize="55" 
                FontFamily="Italia Std Book" 
-               Foreground="Green" 
+               Foreground="ForestGreen" 
                Height="116" 
                Width="354" Margin="146,10,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button Content="←" 

@@ -42,9 +42,13 @@ namespace WpfApp1
             var uri = new Uri(selected, UriKind.Relative);
             AvatarImage.Source = new BitmapImage(uri);
         }
+        private void CloseTableManagement(object sender, RoutedEventArgs e)
+        {
+            ManagementPanel.Visibility = Visibility.Collapsed;
+        }
         private void ExecuteActionButton_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=.;Initial Catalog=FlowerShopDB;Integrated Security=True;";
+            string connectionString = @"Server=.\SQLEXPRESS;Database=flowerShop;Trusted_Connection=True;";
             string selectedTable = TableComboBox.SelectedItem?.ToString();
             string action = ActionComboBox.SelectedItem?.ToString();
 
@@ -123,12 +127,14 @@ namespace WpfApp1
                             break;
 
                         case "Orders":
+                            string oIdText = GetFieldValue("OrderIDField");
                             string empId = GetFieldValue("EmployeeIDField");
                             string productId = GetFieldValue("ProductIDField");
                             string quantityText = GetFieldValue("QuantityField");
                             string dateText = GetFieldValue("OrderDateField");
 
-                            if (!int.TryParse(empId, out int empOrderId) ||
+                            if (!int.TryParse(oIdText, out int oId) ||
+                                !int.TryParse(empId, out int empOrderId) ||
                                 !int.TryParse(productId, out int prodId) ||
                                 !int.TryParse(quantityText, out int quantity) ||
                                 !DateTime.TryParse(dateText, out DateTime orderDate))
@@ -138,24 +144,37 @@ namespace WpfApp1
                             }
 
                             if (action == "Insert")
-                                cmd.CommandText = "INSERT INTO Orders (EmployeeID, ProductID, Quantity, OrderDate) VALUES (@eid, @pid, @q, @d)";
+                            {
+                                cmd.CommandText = "INSERT INTO Orders (OrderID, EmployeeID, ProductID, Quantity, OrderDate) VALUES (@oid, @eid, @pid, @q, @d)";
+                            }
                             else if (action == "Update")
-                                cmd.CommandText = "UPDATE Orders SET Quantity=@q, OrderDate=@d WHERE EmployeeID=@eid AND ProductID=@pid";
+                            {
+                                cmd.CommandText = "UPDATE Orders SET Quantity=@q, OrderDate=@d WHERE OrderID=@oid";
+                            }
                             else
-                                cmd.CommandText = "DELETE FROM Orders WHERE EmployeeID=@eid AND ProductID=@pid";
+                            {
+                                cmd.CommandText = "DELETE FROM Orders WHERE OrderID=@oid";
+                            }
 
-                            cmd.Parameters.AddWithValue("@eid", empOrderId);
-                            cmd.Parameters.AddWithValue("@pid", prodId);
-                            if (action != "Delete")
+                            cmd.Parameters.AddWithValue("@oid", oId);
+                            if (action == "Insert")
+                            {
+                                cmd.Parameters.AddWithValue("@eid", empOrderId);
+                                cmd.Parameters.AddWithValue("@pid", prodId);
+                                cmd.Parameters.AddWithValue("@q", quantity);
+                                cmd.Parameters.AddWithValue("@d", orderDate);
+                            }
+                            else if (action == "Update")
                             {
                                 cmd.Parameters.AddWithValue("@q", quantity);
                                 cmd.Parameters.AddWithValue("@d", orderDate);
                             }
                             break;
 
+
                         case "Bouquets":
                         case "Compositions":
-                        case "Presents":
+                        case "Gifts":
                             string name = GetFieldValue("NameField");
                             string desc = GetFieldValue("DescriptionField");
                             string priceText = GetFieldValue("PriceField");
@@ -243,7 +262,7 @@ namespace WpfApp1
 
                 case "Bouquets":
                 case "Compositions":
-                case "Presents":
+                case "Gifts":
                     AddField("NameField", "Name");
                     AddField("DescriptionField", "Description");
                     AddField("PriceField", "Price");
@@ -271,7 +290,7 @@ namespace WpfApp1
 
             if (TableComboBox.Items.Count == 0)
             {
-                TableComboBox.ItemsSource = new List<string> { "Employees", "LogIns", "Orders", "Bouquets", "Compositions", "Presents" };
+                TableComboBox.ItemsSource = new List<string> { "Employees", "LogIns", "Orders", "Bouquets", "Compositions", "Gifts" };
                 ActionComboBox.ItemsSource = new List<string> { "Insert", "Update", "Delete" };
             }
 

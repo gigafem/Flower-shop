@@ -5,9 +5,162 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="UserWindow" Height="443" Width="443"
+        xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
+        Title="Staff Control Panel" Height="500" Width="443"
         WindowStartupLocation="CenterScreen">
-    <Grid>
-        
+
+    <Window.DataContext>
+        <viewmodel:MenuViewModel/>
+    </Window.DataContext>
+
+    <Grid Background="FloralWhite">
+        <Image Source="Images/leavesFrame.png" Stretch="UniformToFill"
+               Margin="-156,-107,82,112" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="←" 
+        HorizontalAlignment="Left" 
+        Height="190" 
+        VerticalAlignment="Top" 
+        Width="268" FontSize="35" 
+        Cursor="Hand" 
+        FontFamily="Italia Std Book" 
+        Foreground="green" Margin="25,392,0,0" 
+        Command="{Binding GoBackMMCommand}" 
+        RenderTransformOrigin="0.46,0.34">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="FloralWhite"
+                    CornerRadius="30"
+                    BorderBrush="ForestGreen"
+                    BorderThickness="2" Margin="0,0,213,142" >
+                        <ContentPresenter 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Label Content="Welcome to staff &#xA;control panel!" 
+        Foreground="ForestGreen"
+        FontSize="35"
+        HorizontalAlignment="Center" 
+        Height="93" 
+        Margin="0,18,0,0" 
+        VerticalAlignment="Top" 
+        Width="349" FontFamily="Italia Std Book" 
+        HorizontalContentAlignment="Center" 
+        VerticalContentAlignment="Center"/>
+
+        <Button Content="Orders" 
+       HorizontalAlignment="Center" 
+       Height="71" 
+       VerticalAlignment="Top" 
+       Width="170" FontSize="25" 
+       Cursor="Hand" 
+       FontFamily="Italia Std Book" 
+       Margin="0,128,0,0" 
+       Foreground="ForestGreen"
+       Command="{Binding GoOrdersCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFE2EFCE" Opacity="1"
+       CornerRadius="30"
+           BorderBrush="ForestGreen"
+       BorderThickness="3">
+                        <ContentPresenter HorizontalAlignment="Center"
+           VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button Content="Bouquets" 
+        HorizontalAlignment="Center" 
+        Height="71" 
+        VerticalAlignment="Top" 
+        Width="170" FontSize="25" 
+        Cursor="Hand" 
+        FontFamily="Italia Std Book" 
+        Margin="0,204,0,0" 
+        Foreground="ForestGreen"
+        Command="{Binding GoBouquetsDGCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFE2EFCE" Opacity="1"
+                    CornerRadius="30"
+                    BorderBrush="ForestGreen"
+                    BorderThickness="3">
+                        <ContentPresenter 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button Content="Compositions" 
+            HorizontalAlignment="Center" 
+            Height="71" 
+            VerticalAlignment="Top" 
+            Width="170" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="0,280,0,0" 
+            Foreground="ForestGreen"
+            Command="{Binding GoCompositionsDGCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFE2EFCE" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="ForestGreen"
+                        BorderThickness="3">
+                        <ContentPresenter 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button Content="Presents" 
+            HorizontalAlignment="Center" 
+            Height="71" 
+            VerticalAlignment="Top" 
+            Width="170" FontSize="25" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Margin="0,356,0,0" 
+            Foreground="ForestGreen"
+            Command="{Binding GoPresentsDGCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="#FFE2EFCE" Opacity="1"
+                CornerRadius="30"
+                BorderBrush="ForestGreen"
+                BorderThickness="3">
+                        <ContentPresenter 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

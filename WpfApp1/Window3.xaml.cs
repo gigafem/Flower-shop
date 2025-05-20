@@ -40,11 +40,13 @@ namespace WpfApp1
                     if (role == "admin")
                     {
                         Window4 adminWindow = new Window4();
+                        Application.Current.MainWindow = adminWindow;  
                         adminWindow.Show();
                     }
                     else
                     {
                         UserWindow userWindow = new UserWindow();
+                        Application.Current.MainWindow = userWindow;
                         userWindow.Show();
                     }
 

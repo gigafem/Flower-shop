@@ -12,10 +12,10 @@
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
+    
     <Grid Background="#fff5e0">
         <Image x:Name="AvatarImage" 
                Margin="28,7,285,354"/>
-
         <Button Content="←"
                 HorizontalAlignment="Left" 
                 Height="191" 
@@ -46,7 +46,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Welcome to &#xD;&#xA;control panel!" 
+        <Label Content="Welcome to admin &#xD;&#xA;control panel!" 
                Foreground="LightCoral"
                FontSize="35"
                HorizontalAlignment="Left" 
@@ -249,8 +249,18 @@
                     <!-- Поля формы (будут добавляться динамически) -->
                     <StackPanel x:Name="FormFieldsPanel" Grid.Row="2" Margin="0,0,0,10"/>
 
+                    <Button Content="X"
+                            Width="30"
+                            Height="30"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Click="CloseTableManagement"
+                            Cursor="Hand"
+                            FontFamily="Italia Std Book"/>
+                    
+
                     <!-- Кнопка Выполнить -->
-                    <Button Content="Do action" 
+                    <Button Content="DO" 
                     Grid.Row="3" 
                     Height="40"
                     FontSize="18"

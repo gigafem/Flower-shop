@@ -18,7 +18,7 @@
         <Border Background="White" CornerRadius="10" Padding="20">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Image x:Name="LoadingGIF" Width="200" Height="200" Stretch="Uniform"/>
-                <TextBlock Text="Loading..." Margin="0,20,0,0" FontSize="18" HorizontalAlignment="Center" FontFamily="SimpleRonde"/>
+                <TextBlock Text="Loading..." Margin="0,20,0,0" FontSize="18" HorizontalAlignment="Center" FontFamily="SimpleRonde" FontWeight="Bold"/>
             </StackPanel>
         </Border>
     </Grid>
