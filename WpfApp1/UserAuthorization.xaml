@@ -79,6 +79,7 @@
             FontFamily="Italia Std Book" 
             Foreground="LightCoral" Margin="0,329,0,0" Click="Button_Click" >
 
+
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="#FFFFB1B4" Opacity="1"
@@ -118,5 +119,30 @@
            Foreground="DarkRed"
            FontSize="14"
            TextAlignment="Center"/>
+
+        <Button Content="skip" 
+            HorizontalAlignment="Left" 
+            Height="24" 
+            VerticalAlignment="Top" 
+            Width="42" FontSize="15" 
+            Cursor="Hand" 
+            FontFamily="Italia Std Book" 
+            Foreground="gray" Margin="381,10,0,0"
+            Command="{Binding OpenMainWindowCommand}" >
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="LightGray" Opacity="1"
+                        CornerRadius="30"
+                        BorderBrush="gray"
+                    
+
+                        BorderThickness="3" Margin="0,0,-8,-12">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

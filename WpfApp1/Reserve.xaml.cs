@@ -10,8 +10,10 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Core;
 
 namespace WpfApp1
 {
@@ -25,12 +27,29 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            goInstagram.Visibility = Visibility.Visible;
+
+            Storyboard spinner = (Storyboard)FindResource("SpinnerAnimation");
+            spinner.Begin();
+
+            Logger.Log("Visited our website");
+
+            // Ждать 1.5 секунды для анимации
+            await Task.Delay(1500);
+
+            Reserve window = new Reserve();
+            window.Show();
+            Application.Current.MainWindow = window;
+            this.Close();
+
             Process.Start(new ProcessStartInfo("https://www.instagram.com/kostopraww/")
             {
                 UseShellExecute = true
             });
         }
+       
+
     }
 }

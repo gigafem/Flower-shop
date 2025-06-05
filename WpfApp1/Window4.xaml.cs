@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Core;
 
 namespace WpfApp1
 {
@@ -205,6 +206,7 @@ namespace WpfApp1
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Action completed successfully!");
+                    Logger.Log("The admin made changes to the database");
                 }
                 catch (Exception ex)
                 {

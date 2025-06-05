@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Core;
 
 namespace WpfApp1
 {
@@ -22,22 +23,9 @@ namespace WpfApp1
         public Window2()
         {
             InitializeComponent();
-            
+            Logger.Log("Entered into the app");
         }
+        
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void GuestButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
 }

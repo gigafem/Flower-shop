@@ -15,7 +15,7 @@ namespace WpfApp1
 
             Task.Run(() =>
             {
-                System.Threading.Thread.Sleep(4000); // имитация загрузки
+                System.Threading.Thread.Sleep(5000); 
 
                 Dispatcher.Invoke(() =>
                 {

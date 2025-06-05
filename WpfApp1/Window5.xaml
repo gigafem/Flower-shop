@@ -13,7 +13,8 @@
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
 
-    <Grid>
+    <Grid Background="FloralWhite">
+
         <Button Content="←" 
                 HorizontalAlignment="Left" 
                 Height="192" 
@@ -35,7 +36,7 @@
             </Button.RenderTransform>
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="FloralWhite"
+                    <Border Background="white"
                         CornerRadius="30"
                         BorderBrush="ForestGreen"
                         BorderThickness="2" Margin="0,0,213,142" >
@@ -45,6 +46,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-       
+        
+
+
     </Grid>
 </Window>

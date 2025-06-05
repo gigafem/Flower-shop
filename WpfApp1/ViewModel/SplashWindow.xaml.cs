@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using WpfAnimatedGif;
 
 namespace WpfApp1.ViewModel
@@ -23,6 +25,7 @@ namespace WpfApp1.ViewModel
         public SplashWindow()
         {
             InitializeComponent();
+            Loaded += Window_Loaded;
 
             var image = new BitmapImage();
             image.BeginInit();
@@ -31,5 +34,17 @@ namespace WpfApp1.ViewModel
 
             ImageBehavior.SetAnimatedSource(LoadingGIF, image);
         }
+        
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            StatusText.Text = "Loading...";
+            await Task.Delay(1500); 
+            StatusText.Text = "Connecting to the database...";
+            await Task.Delay(3000); 
+            StatusText.Text = "Done!";
+            await Task.Delay(1500);
+        }
+
     }
+
 }

@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Core;
 
 namespace WpfApp1
 {
@@ -33,28 +34,24 @@ namespace WpfApp1
                 string email = EmailBox.Text.Trim();
                 string password = PasswordBox.Password.Trim();
 
-                // Проверка, что поля не пустые
                 if (string.IsNullOrEmpty(phoneNumber) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
                 {
                     ResultText.Text = "All fields must be filled in!";
                     return;
                 }
 
-                // Проверка корректности номера телефона (пример: от 10 до 15 цифр, можно с плюсом)
                 if (!Regex.IsMatch(phoneNumber, @"^\+?\d{10,15}$"))
                 {
                     ResultText.Text = "Invalid phone number format!";
                     return;
                 }
 
-                // Проверка корректности email
                 if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
                 {
                     ResultText.Text = "Invalid email format!";
                     return;
                 }
 
-                // Минимальная проверка пароля (например, минимум 6 символов)
                 if (password.Length < 6)
                 {
                     ResultText.Text = "Password must be at least 6 characters long!";
@@ -62,8 +59,9 @@ namespace WpfApp1
                 }
 
                 MessageBox.Show("the login was completed successfully!");
+                Logger.Log("Logged in");
 
-                MainWindow mainWindow = new MainWindow();
+                MainWindowForAuthorizedUser mainWindow = new MainWindowForAuthorizedUser();
                 Application.Current.MainWindow = mainWindow;
                 mainWindow.Show();
 
@@ -74,7 +72,7 @@ namespace WpfApp1
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-}
+        }
     }
 }
 

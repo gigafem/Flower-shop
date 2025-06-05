@@ -23,15 +23,29 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public static class SessionManager
         {
-
+            public static bool IsUserLoggedIn { get; set; } = false;
+            public static string? CurrentUsername { get; set; } = null;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+                if (!SessionManager.IsUserLoggedIn)
+                {
+                    MessageBox.Show("Only registered users can leave reviews.",
+                                            "Access is prohibited",
+                                    MessageBoxButton.OK,
+                                    MessageBoxImage.Warning);
+                    return;
+                }
 
-        }
-    }
+                AboutUs reviewsWindow = new AboutUs();
+                reviewsWindow.Show();
+                Application.Current.MainWindow = reviewsWindow;
+            
+            }
+
+     }
 }
+

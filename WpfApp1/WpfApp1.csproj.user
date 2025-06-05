@@ -10,7 +10,19 @@
     <Compile Update="BouquetsDG.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="BouquetsForAuthUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CatalogForAuthUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CompositionsDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CompositionsForAuthUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ContactsForAuthorizedUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="EmployeesDG.xaml.cs">
@@ -19,10 +31,19 @@
     <Compile Update="LogInsDG.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MainWindowForAuthorizedUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="OrdersDG.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PresentsDG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PresentsForAuthUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReviewsForAuthorizedUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserAuthorization.xaml.cs">
@@ -60,7 +81,19 @@
     <Page Update="BouquetsDG.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="BouquetsForAuthUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CatalogForAuthUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CompositionsDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CompositionsForAuthUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ContactsForAuthorizedUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EmployeesDG.xaml">
@@ -69,7 +102,13 @@
     <Page Update="LogInsDG.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MainWindowForAuthorizedUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="PresentsDG.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PresentsForAuthUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Reserve.xaml">
@@ -79,6 +118,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AboutUs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReviewsForAuthorizedUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserWindow.xaml">

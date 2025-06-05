@@ -14,7 +14,7 @@
     </Window.DataContext>
 
     <Grid>
-        <Image Source="Images\mainGuest.png" Stretch="fill" Margin="-10,0,-7,0"></Image>
+        <Image Source="Images\mainGuest.png" Stretch="fill"/>
         <Button Content="←" 
          HorizontalAlignment="Left" 
          Height="191" 
@@ -23,7 +23,7 @@
          Cursor="Hand" 
          FontFamily="Italia Std Book" 
          Foreground="green" Margin="10,344,0,0" 
-         Command="{Binding GoBackMMCommand}" 
+         Command="{Binding GoBackAuthCommand}" 
          RenderTransformOrigin="0.46,0.34">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -65,7 +65,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button Content="about us" 
+        <Button Content="reviews" 
                     HorizontalAlignment="Left" 
                     Height="104" 
                     VerticalAlignment="Top" 
@@ -76,7 +76,7 @@
                     Background="White" 
                     Foreground="ForestGreen" 
                     Margin="368,235,0,0"
-                    Command="{Binding OpenAboutUsCommand}"
+                    Command="{Binding OpenReviewsCommand}"
                     Cursor="Hand">
             <Button.Template>
                 <ControlTemplate TargetType="Button">

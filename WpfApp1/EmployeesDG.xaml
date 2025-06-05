@@ -14,7 +14,19 @@
     </Window.DataContext>
     
     <Grid>
-        <DataGrid x:Name="EmployeeDataGrid" AutoGenerateColumns="True" Margin="10"/>
+        <DataGrid x:Name="EmployeeDataGrid" AutoGenerateColumns="True" Margin="10,10,10,150"/>
+        <Button Background="LightGreen" Content="Export to Excel" HorizontalAlignment="Center" Height="35" 
+Margin="0,282,0,0" VerticalAlignment="Top" Width="200" FontSize="20" 
+FontFamily="Italia Std Book" Foreground="ForestGreen"
+Click="ExportToExcel_Click"/>
+        <Button Background="LightBlue" Content="Export to Word" HorizontalAlignment="Center" Height="35" 
+Margin="0,322,0,0" VerticalAlignment="Top" Width="200" FontSize="20" 
+FontFamily="Italia Std Book" Foreground="DarkSlateBlue"
+Click="ExportToWord_Click"/>
+        <Button Background="LightGray" Content="Export to .txt" HorizontalAlignment="Center" Height="35" 
+Margin="0,362,0,0" VerticalAlignment="Top" Width="200" FontSize="20" 
+FontFamily="Italia Std Book" Foreground="DimGray"
+Click="ExportToTXT_Click"/>
 
     </Grid>
 </Window>

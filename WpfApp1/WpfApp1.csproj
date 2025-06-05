@@ -15,8 +15,11 @@
     <None Remove="Avatars\avatar4.png" />
     <None Remove="Images\aboutUs.png" />
     <None Remove="Images\authorization.png" />
+    <None Remove="Images\candle.png" />
+    <None Remove="Images\cart.png" />
     <None Remove="Images\catalog1.png" />
     <None Remove="Images\contacts.png" />
+    <None Remove="Images\flower.png" />
     <None Remove="Images\leavesFrame.png" />
     <None Remove="Images\mainGuest.png" />
     <None Remove="Images\mainMenu.png" />
@@ -27,9 +30,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
+    <PackageReference Include="DocX" Version="1.0.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    <PackageReference Include="Xceed.Words.NET" Version="5.0.25228.6154" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,10 +58,19 @@
     <Resource Include="Images\authorization.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\candle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\cart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\catalog1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\contacts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flower.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\leavesFrame.png">

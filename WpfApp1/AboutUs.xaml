@@ -6,17 +6,17 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:viewmodel="clr-namespace:WpfApp1.ViewModel"
         mc:Ignorable="d"
-        Title="About Us"  Height="443" Width="443"
+        Title="Reviews"  Height="443" Width="443"
         WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
         <viewmodel:MenuViewModel/>
     </Window.DataContext>
-
+    
     <Grid>
         <Image Source="Images/aboutUs.png" Stretch="fill" />
         <Rectangle Fill="FloralWhite" HorizontalAlignment="Center" Height="316" Stroke="Transparent" VerticalAlignment="Center" Width="364"/>
-        <Image Source="Images\mainGuest.png" Stretch="fill" Margin="-10,0,-7,0"></Image>
+        <Image Source="Images\mainGuest.png" Stretch="fill" Margin="-27,0,-7,0"></Image>
         <Button Content="←" 
 HorizontalAlignment="Left" 
 Height="191" 
@@ -45,24 +45,70 @@ BorderThickness="2" Margin="0,0,213,142" >
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="About us" 
+        <Label Content="Reviews" 
                HorizontalAlignment="Center" 
                FontSize="50" Height="86"
                VerticalAlignment="Top" 
-               Width="423"
+               Width="462"
                FontFamily="Italia Std Book" 
-               Margin="0,56,0,0"
-               Foreground="LightCoral" HorizontalContentAlignment="Center"/>
-        <Label Content="Floral Rhapsody is more than just a flower shop.&#xA;We create a mood, convey feelings and &#xD;&#xA;turn each bouquet into a little story.&#xA;Each of our bouquets has its own rhapsody: be it&#xD;&#xA;a gentle symphony of love, &#xD;&#xA;a bright melody of celebration or &#xD;&#xA;a quiet sonata of appreciation.&#xA;&#xA;We carefully select only fresh flowers from &#xD;&#xA;the best suppliers so that your emotions &#xD;&#xA;can be conveyed in their most beautiful embodiment. &#xD;&#xA;Our florists are real artists, for whom every order is &#xD;&#xA;a personal work of art.&#xA;&#xA;Floral Rhapsody is more than a flower shop. &#xD;&#xA;It is a space of inspiration where flowers sound in &#xD;&#xA;unison with your feelings." 
+               Margin="0,42,0,0"
+               Foreground="LightCoral" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="&#xA;   You can read the reviews about us and&#xA;leave yours by clicking on the button below!"
                    HorizontalAlignment="Center" 
-                   Height="276" 
-                   Margin="0,99,0,0" 
+                   Height="56" 
+                   Margin="0,97,0,0" 
                    VerticalAlignment="Top" 
-                   Width="259" 
+                   Width="443" 
                    HorizontalContentAlignment="Center" 
                    VerticalContentAlignment="Center"
                    FontSize="12" FontFamily="Berlin Sans FB"
                    Foreground="DarkGreen"/>
+        <Button Content="Write" 
+        HorizontalAlignment="Center" 
+        Height="57" 
+        VerticalAlignment="Top" 
+        Width="182" 
+        FontSize="26" 
+        FontFamily="Italia Std Book"
+        Foreground="DarkOrange" 
+        Margin="0,250,0,0" 
+        Cursor="Hand"
+        Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border
+                    CornerRadius="30"
+                    BorderBrush="orange"
 
+                    BorderThickness="3" Background="#FFFFEFD8">
+                        <ContentPresenter HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Read" 
+            HorizontalAlignment="Center" 
+            Height="57" 
+            VerticalAlignment="Top" 
+            Width="182" 
+            FontSize="26" 
+            FontFamily="Italia Std Book"
+            Foreground="DarkOrange" 
+            Margin="0,176,0,0">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border
+            CornerRadius="30"
+            BorderBrush="orange"
+
+            BorderThickness="3" Background="#FFFFEFD8">
+                        <ContentPresenter HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
+    
 </Window>
