@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\\u0430\u043D\u044F\\documents\\flower-shop\\wpfapp1\\viewmodel\\splashwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\viewmodel\\splashwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\flower-shop\\wpfapp1\\mainwindowforauthorizeduser.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindowforauthorizeduser.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\\u0430\u043D\u044F\\documents\\flower-shop\\wpfapp1\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\flower-shop\\wpfapp1\\mainwindowforauthorizeduser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindowforauthorizeduser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\\u0430\u043D\u044F\\documents\\flower-shop\\wpfapp1\\viewmodel\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\viewmodel\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\flower-shop\\wpfapp1\\window4.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window4.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\flower-shop\\wpfapp1\\window4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\flower-shop\\wpfapp1\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|c:\\users\\user\\source\\repos\\wpfapp1\\flower-shop\\wpfapp1\\window3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{208D1D07-2CB1-42CC-B3D5-AF226186DF54}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\window3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "RelativeToolTip": "WpfApp1\\ViewModel\\MenuViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:29:22.628Z",
-              "IsPinned": true
-            },
-            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\WpfApp1\\App.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\WpfApp1\\App.xaml.cs",
-              "RelativeToolTip": "WpfApp1\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:45:10.193Z"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SplashWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\WpfApp1\\ViewModel\\SplashWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\ViewModel\\SplashWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043D\u044F\\Documents\\Flower-shop\\WpfApp1\\ViewModel\\SplashWindow.xaml.cs",
-              "RelativeToolTip": "WpfApp1\\ViewModel\\SplashWindow.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwCoAAAAkAAAAAAAAAA==",
+              "Title": "MainWindowForAuthorizedUser.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\MainWindowForAuthorizedUser.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindowForAuthorizedUser.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\MainWindowForAuthorizedUser.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\MainWindowForAuthorizedUser.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwDkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:35:18.055Z",
+              "WhenOpened": "2025-06-09T16:18:32.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowForAuthorizedUser.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\MainWindowForAuthorizedUser.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindowForAuthorizedUser.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\MainWindowForAuthorizedUser.xaml",
+              "RelativeToolTip": "WpfApp1\\MainWindowForAuthorizedUser.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T16:17:21.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Window4.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window4.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Window4.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window4.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\Window4.xaml.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAAACwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:13:36.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Window4.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window4.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Window4.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window4.xaml",
+              "RelativeToolTip": "WpfApp1\\Window4.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T16:09:07.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Window2.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window2.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Window2.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window2.xaml",
+              "RelativeToolTip": "WpfApp1\\Window2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T16:09:05.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Window3.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window3.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Window3.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WpfApp1\\Flower-shop\\WpfApp1\\Window3.xaml",
+              "RelativeToolTip": "WpfApp1\\Window3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T16:09:03.476Z",
               "EditorCaption": ""
             }
           ]

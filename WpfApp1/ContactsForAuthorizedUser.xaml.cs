@@ -17,9 +17,6 @@ using WpfApp1.Core;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для ContactsForAuthorizedUser.xaml
-    /// </summary>
     public partial class ContactsForAuthorizedUser : Window
     {
         public ContactsForAuthorizedUser()

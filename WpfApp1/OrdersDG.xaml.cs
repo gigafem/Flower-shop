@@ -22,9 +22,7 @@ using System.IO;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для OrdersDG.xaml
-    /// </summary>
+    
     public partial class OrdersDG : Window
     {
         public OrdersDG()
@@ -46,7 +44,6 @@ namespace WpfApp1
                 return;
             }
 
-            // Преобразуем данные DataGrid в DataTable
             DataTable dt = new DataTable();
 
             foreach (DataGridColumn column in OrdersDataGrid.Columns)
@@ -65,7 +62,6 @@ namespace WpfApp1
                 dt.Rows.Add(row);
             }
 
-            // Сохраняем в Excel
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "Excel Workbook|*.xlsx",
@@ -148,7 +144,6 @@ namespace WpfApp1
 
                 DataTable dt = dv.ToTable();
 
-                // Вычисляем ширину каждой колонки
                 int[] colWidths = new int[dt.Columns.Count];
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {
@@ -165,12 +160,10 @@ namespace WpfApp1
                     }
                 }
 
-                // Построим разделитель
                 string divider = "+" + string.Join("+", colWidths.Select(w => new string('-', w + 2))) + "+";
 
                 StringBuilder sb = new StringBuilder();
 
-                // Заголовок таблицы
                 sb.AppendLine(divider);
                 sb.Append("|");
                 for (int i = 0; i < dt.Columns.Count; i++)
@@ -181,7 +174,6 @@ namespace WpfApp1
                 sb.AppendLine();
                 sb.AppendLine(divider);
 
-                // Строки
                 foreach (DataRow row in dt.Rows)
                 {
                     sb.Append("|");
@@ -195,7 +187,6 @@ namespace WpfApp1
 
                 sb.AppendLine(divider);
 
-                // Сохраняем в файл
                 File.WriteAllText(saveFileDialog.FileName, sb.ToString(), Encoding.UTF8);
 
                 MessageBox.Show("Exported to TXT!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);

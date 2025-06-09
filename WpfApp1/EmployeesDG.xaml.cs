@@ -44,8 +44,6 @@ namespace WpfApp1
                 MessageBox.Show("There is no data for export :-( ");
                 return;
             }
-
-            // Преобразуем данные DataGrid в DataTable
             DataTable dt = new DataTable();
 
             foreach (DataGridColumn column in EmployeeDataGrid.Columns)
@@ -64,7 +62,6 @@ namespace WpfApp1
                 dt.Rows.Add(row);
             }
 
-            // Сохраняем в Excel
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "Excel Workbook|*.xlsx",
@@ -85,10 +82,8 @@ namespace WpfApp1
         }
         private void ExportToWord(DataGrid dataGrid)
         {
-            // Получаем таблицу из DataGrid
             DataTable dt = ((DataView)dataGrid.ItemsSource).ToTable();
 
-            // Диалог выбора файла
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "Word Document (*.docx)|*.docx",
@@ -103,15 +98,12 @@ namespace WpfApp1
                     mainPart.Document = new Word.Document();
                     Word.Body body = new Word.Body();
 
-                    // Заголовок
                     Word.Paragraph heading = new Word.Paragraph(new Word.Run(new Word.Text("Exported Table")));
                     heading.ParagraphProperties = new Word.ParagraphProperties(new Justification { Val = JustificationValues.Center });
                     body.AppendChild(heading);
 
-                    // Создание таблицы
                     Word.Table table = new Word.Table();
 
-                    // Свойства таблицы
                     TableProperties tblProperties = new TableProperties(
                         new TableBorders(
                             new TopBorder { Val = new EnumValue<BorderValues>(BorderValues.Single), Size = 6 },
@@ -124,7 +116,6 @@ namespace WpfApp1
                     );
                     table.AppendChild(tblProperties);
 
-                    // Заголовки
                     Word.TableRow headerRow = new Word.TableRow();
                     foreach (DataColumn column in dt.Columns)
                     {
@@ -133,7 +124,6 @@ namespace WpfApp1
                     }
                     table.Append(headerRow);
 
-                    // Данные
                     foreach (DataRow row in dt.Rows)
                     {
                         Word.TableRow dataRow = new Word.TableRow();
@@ -177,7 +167,6 @@ namespace WpfApp1
 
                 DataTable dt = dv.ToTable();
 
-                // Вычисляем ширину каждой колонки
                 int[] colWidths = new int[dt.Columns.Count];
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {
@@ -194,12 +183,10 @@ namespace WpfApp1
                     }
                 }
 
-                // Построим разделитель
                 string divider = "+" + string.Join("+", colWidths.Select(w => new string('-', w + 2))) + "+";
 
                 StringBuilder sb = new StringBuilder();
 
-                // Заголовок таблицы
                 sb.AppendLine(divider);
                 sb.Append("|");
                 for (int i = 0; i < dt.Columns.Count; i++)
@@ -210,7 +197,6 @@ namespace WpfApp1
                 sb.AppendLine();
                 sb.AppendLine(divider);
 
-                // Строки
                 foreach (DataRow row in dt.Rows)
                 {
                     sb.Append("|");
@@ -224,7 +210,6 @@ namespace WpfApp1
 
                 sb.AppendLine(divider);
 
-                // Сохраняем в файл
                 File.WriteAllText(saveFileDialog.FileName, sb.ToString(), Encoding.UTF8);
 
                 MessageBox.Show("Exported to TXT!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);

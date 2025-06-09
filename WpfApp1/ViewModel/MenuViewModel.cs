@@ -245,5 +245,5 @@ namespace WpfApp1.ViewModel {
                 window.Show();
             });
         }
-}
+    }
 }

@@ -16,9 +16,6 @@ using WpfApp1.Core;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для Window4.xaml
-    /// </summary>
     public partial class Window4 : Window
     {
         private readonly string[] avatarPaths = new[]

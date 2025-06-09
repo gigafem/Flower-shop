@@ -17,9 +17,6 @@ using WpfApp1.Core;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для Window1.xaml
-    /// </summary>
     public partial class Reserve : Window
     {
         public Reserve()
@@ -36,7 +33,6 @@ namespace WpfApp1
 
             Logger.Log("Visited our website");
 
-            // Ждать 1.5 секунды для анимации
             await Task.Delay(1500);
 
             Reserve window = new Reserve();

@@ -15,9 +15,6 @@ using WpfApp1.Core;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для ReviewsForAuthorizedUser.xaml
-    /// </summary>
     public partial class ReviewsForAuthorizedUser : Window
     {
         public ReviewsForAuthorizedUser()

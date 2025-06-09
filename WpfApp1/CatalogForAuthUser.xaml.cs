@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для CatalogForAuthUser.xaml
-    /// </summary>
     public partial class CatalogForAuthUser : Window
     {
         public CatalogForAuthUser()

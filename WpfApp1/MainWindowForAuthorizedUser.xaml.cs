@@ -17,9 +17,6 @@ using WpfApp1.Core;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindowForAuthorizedUser.xaml
-    /// </summary>
     public partial class MainWindowForAuthorizedUser : Window
     {
         public MainWindowForAuthorizedUser()
@@ -66,7 +63,6 @@ namespace WpfApp1
 
             Logger.Log("Logged out");
 
-            // Ждать 1.5 секунды для анимации
             await Task.Delay(1500);
 
             UserAuthorization loginWindow = new UserAuthorization();
